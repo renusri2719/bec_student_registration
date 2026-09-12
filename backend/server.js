@@ -13,7 +13,14 @@ const studentRoutes = require("./routes/studentRoutes");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://student-registration-eosin-theta.vercel.app",
+      "http://localhost:5173"
+    ]
+  })
+);
 app.use(express.json());
 
 // Connect to MongoDB Atlas with auto-retry

@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import axios from "axios";
 import StudentForm from "../components/StudentForm";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API_URL = import.meta.env.VITE_API_URL || "https://student-registration-0zx5.onrender.com";
 
 function Students() {
   const location = useLocation();
