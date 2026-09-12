@@ -13,7 +13,15 @@ try {
   require("dns").setServers(["8.8.8.8", "1.1.1.1"]);
 } catch (e) {}
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://bec-student-registration.vercel.app",
+      "http://localhost:5173",
+      "http://localhost:3000"
+    ]
+  })
+);
 app.use(express.json());
 
 mongoose
@@ -27,6 +35,6 @@ app.get("/", (req, res) => {
   res.send("Student Registration API is running");
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 });

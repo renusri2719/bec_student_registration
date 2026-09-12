@@ -1,4 +1,4 @@
-# Student Registration System (MERN Stack + MongoDB Atlas)
+# BEC Student Registration System (MERN Stack + MongoDB Atlas)
 
 A clean, simple, functional, and beginner-friendly **Student Registration System** built for the Full Stack Development (FSD) Lab Internal Examination.
 
@@ -137,7 +137,7 @@ Ensure your Atlas cluster accepts connections from cloud servers (like Render):
 2. Click **New +** → **Web Service**.
 3. Connect your GitHub repository.
 4. Configure the Web Service:
-   - **Name**: `student-registration-backend` (or your choice)
+   - **Name**: `bec-student-registration`
    - **Root Directory**: `backend`
    - **Environment**: `Node`
    - **Build Command**: `npm install`
@@ -147,7 +147,7 @@ Ensure your Atlas cluster accepts connections from cloud servers (like Render):
    - `MONGO_URI`: `mongodb+srv://poornap307_db_user:atHFzbhGYUzPPLiB@studentregistrationdb.mpdwuit.mongodb.net/studentRegistrationDB?retryWrites=true&w=majority`
 6. Click **Create Web Service**.
 7. Wait ~2 minutes for Render to deploy. Once live, copy your backend URL:
-   `https://student-registration-backend-xxxx.onrender.com`
+   `https://bec-student-registration.onrender.com`
 
 ---
 
@@ -164,9 +164,9 @@ Ensure your Atlas cluster accepts connections from cloud servers (like Render):
    - **Install Command**: `npm install`
 5. Under **Environment Variables**, add:
    - **Key**: `VITE_API_URL`
-   - **Value**: `https://YOUR-RENDER-BACKEND-URL` *(your copied Render URL from Step 3 without trailing slash)*
+   - **Value**: `https://bec-student-registration.onrender.com`
 6. Click **Deploy**.
-7. In ~1 minute, Vercel will give you your live URL (e.g. `https://student-registration-system.vercel.app`).
+7. In ~1 minute, Vercel will give you your live URL: `https://bec-student-registration.vercel.app`.
 
 ---
 

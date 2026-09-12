@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import StudentForm from "../components/StudentForm";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API_URL = import.meta.env.VITE_API_URL || "https://bec-student-registration.onrender.com";
 
 function Students() {
   const [students, setStudents] = useState([]);
